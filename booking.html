@@ -1,1 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book an Appointment • KBK Nails</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
+<nav class="nav">
+  <div class="container wrap">
+    <a class="brand" href="index.html">KBK<span>Nails</span></a>
+    <button class="burger" aria-label="Toggle menu">☰</button>
+    <ul>
+      Home</a>
+      Gallery</a>
+      Services</a>
+      Instagram</a>
+    </ul>
+  </div>
+</nav>
+
+<section>
+  <h1 class="section-title">Book an Appointment</h1>
+  <p class="section-lead">Select your service and preferred date/time. We’ll confirm via email.</p>
+
+  <form id="booking-form" class="form reveal">
+    <label for="name">Full name</label>
+    <input id="name" name="name" type="text" placeholder="Your name" required>
+
+    <label for="email">Email</label>
+    <input id="email" name="email" type="email" placeholder="you@email.com" required>
+
+    <label for="phone">Phone / WhatsApp</label>
+    <input id="phone" name="phone" type="tel" placeholder="+27 ..." required>
+
+    <label for="service">Service</label>
+    <select id="service" name="service" required>
+      <option value="Gel Overlay">Gel Overlay</option>
+      <option value="Acrylic Full Set">Acrylic Full Set</option>
+      <option value="Fill / Rebalance">Fill / Rebalance</option>
+      <option value="Press-On Custom">Press‑On Custom</option>
+      <option value="Manicure">Manicure</option>
+      <option value="Pedicure">Pedicure</option>
+      <option value="Nail Art">Nail Art</option>
+    </select>
+
+    <label for="date">Preferred date</label>
+    <input id="date" name="date" type="date" required>
+
+    <label for="time">Preferred time</label>
+    <input id="time" name="time" type="time" required>
+
+    <label for="notes">Notes (length, colours, inspo)</label>
+    <textarea id="notes" name="notes" placeholder="Tell us the look you want…"></textarea>
+
+    <button type="submit" class="btn">Send Booking Request</button>
+    <p style="color:var(--muted); margin-top:10px">
+      * On GitHub Pages, this uses your email app (mailto). If you prefer a hosted form, I can wire up Formspree or Google Forms.
+    </p>
+  </form>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p>Follow on Instagram: https://instagram.com/kbk_nails@kbk_nails</a></p>
+    <p>© 2026 KBK Nails</p>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
